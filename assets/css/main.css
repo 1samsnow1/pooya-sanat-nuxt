@@ -1,0 +1,231 @@
+@import "tailwindcss";
+@font-face {
+    font-family: IRANSanse;
+    src: url(../fonts/A-Iranian-Sans/IRANSansWeb.ttf);
+    src: url(../fonts/A-Iranian-Sans/IRANSansWeb.woff);
+  }
+@font-face {
+    font-family: b_titr;
+    src: url(../fonts/b_titr/B_Titr_Bold_0.ttf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: IRANSanse;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.svHeight{
+  min-height: 100vh;
+}
+.headerPadding {
+  padding: 5px 10px ;
+}
+.titleMargin{
+  margin-bottom: 2rem;
+}
+.formPaddings{
+  padding: 1rem;
+}
+.formMargins{
+  margin: 2rem auto;
+  margin-bottom: 0;
+  padding: 2rem 0 6rem 0;
+}
+.inputPaddings {
+  padding: 4px;
+}
+.inputMargins{
+  margin: 1rem 0;
+}
+.marginRight {
+  margin-right: 4px;
+}
+.buttonPaddings{
+  padding: 1px 0;
+}
+.formButtonPadding {
+  padding: 2px 6px;
+}
+.picPaddings {
+    padding: 3rem;
+}
+.lineHeight288 {
+  line-height: 288px;
+}
+.labelPadding {
+}
+@media screen and (max-width:640px){
+  .labelPadding{
+    margin-bottom: 5px;
+  }
+}
+
+
+@layer components {
+  .first-slide-small-box {
+    @apply w-30 h-30 sm:w-40 sm:h-40 border-2 border-blue-700 bg-slate-950 sm:text-lg
+  }
+  .hoverTransition {
+    @apply duration-300 transition-all
+  }
+  .product_title {
+    @apply  text-lime-700 font-bold ml-1
+  }
+  .about_line_styles {
+    @apply w-full h-1 border-b-2 border-slate-600
+  }
+  .pic_label_styles{
+    @apply w-60 sm:w-72 h-60 sm:h-72 active:scale-90 text-slate-300 border-2 border-dashed border-slate-300 text-7xl cursor-pointer text-center
+  }
+  .inputStyles {
+    @apply outline-0 bg-slate-700 hover:bg-slate-600 rounded placeholder:text-gray-400
+  }
+  .imgPreview {
+    @apply w-fit max-h-[500px] cursor-pointer active:scale-90
+  }
+  .formButton{
+    @apply bg-slate-700 rounded text-slate-300 cursor-pointer hover:bg-slate-600
+  }
+  .labelStyles {
+    @apply block md:inline
+  }
+}
+@theme {
+  --animate-showContent: appearFromBot 0.5s forwards;
+  --animate-showContent2: appearFromBot 1s forwards;
+  --animate-showContent3: appearFromBot 1.5s forwards;
+  --animate-showContent4: appearFromBot 2s forwards;
+  --animate-showContent5: appearFromBot 2.5s forwards;
+  --animate-showContent6: appearFromBot 3s forwards;
+  --animate-increaseSize: increaseSize 1s forwards;
+  --animate-mobileIncreaseSize: mobileIncreaseSize 1s forwards;
+  --animate-decreaseSize: decreaseSize 1s forwards;
+  --animate-mobileDecreaseSize: monileDecreaseSize 1s forwards;
+  --animate-rotate45: rotate45 2s forwards;
+  --animate-mobileRotate45: mobileRotate45 2s forwards;
+  --animate-moveLtr: moveLtr 10s linear infinite;
+  --animate-fade: fade 1s forwards;
+  @keyframes appearFromBot {
+    0%{
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes increaseSize {
+    0%{
+      width: 80px;
+      height:80px;
+    }
+    100% {
+      width:330px;
+      height:330px;
+    }
+  }
+  @keyframes mobileIncreaseSize {
+    0%{
+      width: 80px;
+      height:80px;
+    }
+    100% {
+      width:300px;
+      height:300px;
+    }
+  }
+  @keyframes decreaseSize {
+    0%{
+      width: 330px;
+      height:330px;
+      opacity:1;
+    }
+    100% {
+      width:0px;
+      height:0px;
+      opacity:0;
+    }
+  }
+  @keyframes mobileDecreaseSize {
+    0%{
+      width: 300px;
+      height:300px;
+      opacity:1;
+    }
+    100% {
+      width:0px;
+      height:0px;
+      opacity:0;
+    }
+  }
+  @keyframes rotate45 {
+    0%{
+      transform:rotate(45deg);
+      width:330px;
+    }
+    20%{
+      transform:rotate(45deg);
+      width:330px;
+    }
+    50%{
+      transform:rotate(0deg);
+      width:330px;
+    }
+    100%{width: 460px;}
+  }
+  @keyframes mobileRotate45 {
+    0%{
+      transform:rotate(45deg);
+      width:300px;
+      height:300px;
+    }
+    20%{
+      transform:rotate(45deg);
+      width:300px;
+      height:300px;
+    }
+    50%{
+      transform:rotate(0deg);
+      width:300px;
+      height:300px;
+    }
+    100%{
+      width: 300px;
+      height:300px;
+    }
+  }
+  @keyframes moveLtr {
+    0%{
+      transform:translateX(-300px);
+    }
+    100%{
+      transform:translateX(300px);
+    }
+  }
+  @keyframes fade {
+    0%{
+      opacity:1;
+    }
+    50%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+
+}
