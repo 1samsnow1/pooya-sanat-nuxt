@@ -1,1 +1,0 @@
-import{_ as t,c as s,a as n,o as c}from"./hnwj6K8j.js";const o={},r={class:"w-full svHeight text-slate-400 flex justify-center items-center"};function a(l,e){return c(),s("div",r,e[0]||(e[0]=[n("h2",null,"به پنل ادمین خوش آمدید",-1)]))}const i=t(o,[["render",a]]);export{i as default};
