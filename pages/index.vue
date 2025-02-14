@@ -134,6 +134,8 @@ const swiper = useSwiper(containerRef,{
         }
     },
 })
+let brandShow = ref(false);
+
 </script>
 
 <style>
