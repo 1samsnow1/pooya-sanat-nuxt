@@ -1,2 +1,0 @@
-import{_ as s}from"./server.mjs";import{m as o,o as e,a4 as t,j as r}from"../routes/renderer.mjs";import"../_/nitro.mjs";import"node:async_hooks";const n={};const a=n.setup;n.setup=(s,o)=>{const e=r();return(e.modules||(e.modules=new Set)).add("layouts/admin.vue"),a?a(s,o):void 0};const d=s(n,[["ssrRender",function(s,r,n,a){r(`<div${o(e({class:""},a))}>`),t(s.$slots,"default",{},null,r,n),r("</div>")}]]);export{d as default};
-//# sourceMappingURL=admin-BD9Rh9CX.mjs.map

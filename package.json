@@ -8,10 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start": "nuxt start"
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxthub/core": "^0.8.17",
     "@tailwindcss/vite": "^4.0.2",
     "nuxt": "^3.15.4",
     "nuxt-swiper": "^2.0.0",

@@ -1,1 +1,0 @@
-{"version":3,"file":"adminpanel-DztqbcDd.mjs","sources":["../../../../pages/adminpanel.vue"],"sourcesContent":null,"names":["panelList","name","address","logoutLoader","ref","useRouter"],"mappings":"6VAqBA,MAAMA,EAAY,CACd,CAACC,KAAK,UAAUC,QAAQ,wBACxB,CAACD,KAAK,mBAAmBC,QAAQ,0BACjC,CAACD,KAAK,eAAeC,QAAQ,4BAE7B,IAAAC,EAAeC,GAAI,UAuBEC"}
